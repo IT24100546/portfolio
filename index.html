@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tharushi Navodya | Data Analytics Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ───────────────── NAVBAR ───────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo">TN</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"          class="nav-link active"  data-section="home">Home</a></li>
+        <li><a href="#about"         class="nav-link"         data-section="about">About</a></li>
+        <li><a href="#skills"        class="nav-link"         data-section="skills">Skills</a></li>
+        <li><a href="#projects"      class="nav-link"         data-section="projects">Projects</a></li>
+        <li><a href="#certifications"class="nav-link"         data-section="certifications">Certifications</a></li>
+        <li><a href="#contact"       class="nav-link nav-contact" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ───────────────── HOME ───────────────── -->
+  <section id="home" class="section section--home">
+    <div class="home-grid">
+      <div class="home-left-section" data-animate>
+        <div class="profile-photo">
+          <img src="profile.png" alt="Tharushi Navodya" />
+        </div>
+        <div class="home-left">
+          <div class="hero-intro">
+            <p class="eyebrow">Data Science &amp; Analytics Portfolio</p>
+            <h1 class="hero-name">Tharushi<br>Navodya</h1>
+          </div>
+        </div>
+        <div class="hero-details">
+          <p class="hero-tagline">I turn raw data into clear stories that drive better decisions.</p>
+          <p class="hero-role">Aspiring Data Analyst / Data Analytics Undergraduate</p>
+          <p class="hero-desc">
+            Building end-to-end analytics solutions with Python, SQL, Power BI, EDA, and machine learning.
+            Focused on clean data, clear insights, and real business impact.
+          </p>
+          <div class="availability">
+            <span class="pulse-dot"></span>
+            Open to Data Analyst internships
+          </div>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="cv.pdf"    class="btn btn--ghost" download>Download CV</a>
+            <a href="https://github.com/IT24100546" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/tharushi-navodya-90ab7b385" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-card" data-animate data-delay="150">
+        <div class="overview-top">
+          <div>
+            <p class="overview-label">Portfolio Overview</p>
+            <p class="overview-file">analytics_profile.sql</p>
+          </div>
+          <span class="badge badge--available">● AVAILABLE</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-num" data-count="4">0</span><span class="stat-num">+</span>
+            <p class="stat-label">Projects</p>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">3.73</span>
+            <p class="stat-label">Current GPA</p>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-count="10">0</span><span class="stat-num">+</span>
+            <p class="stat-label">Tools & Technologies</p>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">Open</span>
+            <p class="stat-label">Internship Status</p>
+          </div>
+        </div>
+
+        <div class="cap-map">
+          <div class="cap-header">
+            <span>Analytics Capability Map</span>
+            <span class="teal">Current Focus</span>
+          </div>
+          <div class="cap-row">
+            <span class="cap-name">Data preparation</span>
+            <div class="cap-bar-bg"><div class="cap-bar" data-width="90"></div></div>
+            <span class="cap-tag">CORE</span>
+          </div>
+          <div class="cap-row">
+            <span class="cap-name">SQL & modelling</span>
+            <div class="cap-bar-bg"><div class="cap-bar" data-width="85"></div></div>
+            <span class="cap-tag">CORE</span>
+          </div>
+          <div class="cap-row">
+            <span class="cap-name">BI & storytelling</span>
+            <div class="cap-bar-bg"><div class="cap-bar" data-width="75"></div></div>
+            <span class="cap-tag">PRIMARY</span>
+          </div>
+          <div class="cap-row">
+            <span class="cap-name">ML & forecasting</span>
+            <div class="cap-bar-bg"><div class="cap-bar" data-width="60"></div></div>
+            <span class="cap-tag">GROWING</span>
+          </div>
+        </div>
+
+        <div class="pipeline">
+          <span>CLEAN</span><span class="arrow">→</span>
+          <span>ANALYSE</span><span class="arrow">→</span>
+          <span>VISUALISE</span><span class="arrow">→</span>
+          <span>EXPLAIN</span>
+        </div>
+        <div class="sql-snippet">SELECT insight FROM data WHERE decision_value = TRUE;</div>
+      </div>
+    </div>
+
+    <!-- floating dot grid bg -->
+    <canvas id="dotGrid" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- ───────────────── ABOUT ───────────────── -->
+  <section id="about" class="section section--about">
+    <div class="about-grid">
+      <div class="about-left" data-animate>
+        <p class="eyebrow">About</p>
+        <h2 class="section-headline">Building a career<br>around useful data.</h2>
+        <p class="body-text">
+          I am a BSc (Hons) Data Science undergraduate at SLIIT, Faculty of Computing.
+          I work across the full analytics process — from cleaning and exploring data, to
+          building dashboards and communicating what the findings mean.
+        </p>
+        <ul class="about-list">
+          <li>Translate business questions into structured analysis.</li>
+          <li>Build end-to-end projects with Python, SQL, and Power BI.</li>
+          <li>Communicate findings clearly to support real decisions.</li>
+          <li>Consistently recognised on the Dean's List (GPA 3.92 / 4.0).</li>
+        </ul>
+      </div>
+
+      <div class="timeline" data-animate data-delay="150">
+        <div class="tl-item">
+          <div class="tl-dot-col">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <p class="tl-year">Current Direction</p>
+            <h3 class="tl-title">Analytics & Data Science</h3>
+            <p class="tl-sub">Building portfolio projects and internship-ready skills.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot-col">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-content">
+            <p class="tl-year">2023 – Present</p>
+            <h3 class="tl-title">BSc (Hons) Data Analytics</h3>
+            <p class="tl-sub">SLIIT, Sri Lanka · GPA 3.92 · Dean's List</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot-col">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-content">
+            <p class="tl-year">2020 - 2023</p>
+            <h3 class="tl-title">Physical Science Stream</h3>
+            <p class="tl-sub">Devi Balika Vidyalaya, Colombo 08 · G.C.E. A/L results: CCC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── SKILLS ───────────────── -->
+  <section id="skills" class="section section--skills">
+    <div class="section-header" data-animate>
+      <h2 class="section-headline">A practical analytics toolkit.</h2>
+      <p class="body-text">
+        Technical foundation combining programming, analysis, business intelligence,
+        databases, and communication for end-to-end data work.
+      </p>
+    </div>
+
+    <div class="skills-grid" data-animate data-delay="100">
+      <div class="skill-cat">
+        <h3 class="skill-cat-title">Programming &amp; Query Languages</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">R</span>
+          <span class="tag">Java</span>
+          <span class="tag">C</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3 class="skill-cat-title">Data Analysis &amp; Business Intelligence</h3>
+        <div class="tags">
+          <span class="tag">EDA</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Statistical Analysis</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Predictive Modelling</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3 class="skill-cat-title">Libraries &amp; Frameworks</h3>
+        <div class="tags">
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Prophet</span>
+          <span class="tag">React</span>
+          <span class="tag">Express</span>
+          <span class="tag">Node.js</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <h3 class="skill-cat-title">Databases, Tools &amp; Platforms</h3>
+        <div class="tags">
+          <span class="tag">MySQL</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Google Colab</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">HackerRank</span>
+        </div>
+      </div>
+
+      <div class="skill-cat skill-cat--full">
+        <h3 class="skill-cat-title">Core Competencies</h3>
+        <div class="tags">
+          <span class="tag">Analytical Thinking</span>
+          <span class="tag">Insight Generation</span>
+          <span class="tag">Funnel Analysis</span>
+          <span class="tag">Time Series Forecasting</span>
+          <span class="tag">Data Storytelling</span>
+          <span class="tag">Dashboard Reporting</span>
+          <span class="tag">Feature Engineering</span>
+          <span class="tag">Business Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── PROJECTS ───────────────── -->
+  <section id="projects" class="section section--projects">
+    <div class="section-header" data-animate>
+      <p class="eyebrow">Featured Projects</p>
+      <h2 class="section-headline">Work that shows the full<br>thinking process.</h2>
+      <p class="body-text">
+        Each project explains the problem, the method, and the outcome —
+        with direct access to the GitHub repository.
+      </p>
+    </div>
+
+    <div class="filter-bar" data-animate data-delay="80">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="eda">EDA</button>
+      <button class="filter-btn" data-filter="bi">BI</button>
+      <button class="filter-btn" data-filter="ml">ML</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <article class="project-card" data-cat="eda" data-animate data-delay="0">
+        <div class="project-thumb project-thumb--green">
+          <div class="thumb-icon">📊</div>
+          <div class="thumb-label">EDA</div>
+        </div>
+        <div class="project-body">
+          <p class="project-type">Exploratory Data Analysis</p>
+          <h3 class="project-title">Online Sales EDA</h3>
+          <p class="project-desc">
+            Explored an online sales dataset with Python — handling missing values,
+            outlier detection (Winsorization), feature engineering, One-Hot Encoding,
+            and Pandera schema validation.
+          </p>
+          <p class="project-outcome"><strong>Outcome:</strong> Clean, analysis-ready dataset with actionable sales insights and a full visualisation report.</p>
+          <div class="project-footer">
+            <a href="https://github.com/IT24100546/online-sales-eda" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="bi" data-animate data-delay="80">
+        <div class="project-thumb project-thumb--blue">
+          <div class="thumb-icon">📈</div>
+          <div class="thumb-label">BI</div>
+        </div>
+        <div class="project-body">
+          <p class="project-type">Full Stack Analytics</p>
+          <h3 class="project-title">Superstore Sales Analytics</h3>
+          <p class="project-desc">
+            End-to-end pipeline with Python + SQLite for data processing and Power BI
+            for interactive dashboards. Covers sales, customer, and product analysis.
+          </p>
+          <p class="project-outcome"><strong>Outcome:</strong> Functional analytics workflow connecting raw data to a business-ready Power BI dashboard.</p>
+          <div class="project-footer">
+            <a href="https://github.com/IT24100546/superstore-fullstack-analytics" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="eda" data-animate data-delay="160">
+        <div class="project-thumb project-thumb--purple">
+          <div class="thumb-icon">🛒</div>
+          <div class="thumb-label">EDA</div>
+        </div>
+        <div class="project-body">
+          <p class="project-type">Funnel Analysis</p>
+          <h3 class="project-title">eCommerce Funnel Analysis</h3>
+          <p class="project-desc">
+            Analysed eCommerce Events History (cosmetics dataset) to map the user journey
+            from view to purchase and identify key drop-off points in the funnel.
+          </p>
+          <p class="project-outcome"><strong>Outcome:</strong> Identified conversion bottlenecks with stage-by-stage funnel metrics and visual breakdown.</p>
+          <div class="project-footer">
+            <a href="https://github.com/IT24100546/ecommerce-funnel-analysis" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="ml" data-animate data-delay="240">
+        <div class="project-thumb project-thumb--teal">
+          <div class="thumb-icon">⚡</div>
+          <div class="thumb-label">ML</div>
+        </div>
+        <div class="project-body">
+          <p class="project-type">Time Series Forecasting</p>
+          <h3 class="project-title">PJME Energy Consumption Forecast</h3>
+          <p class="project-desc">
+            Compared 5 forecasting models — Moving Average, Linear Regression, ARIMA,
+            SARIMA, and Prophet — on PJME hourly energy consumption data.
+          </p>
+          <p class="project-outcome"><strong>Outcome:</strong> Prophet outperformed all models. Full comparison report with performance metrics and visualisations.</p>
+          <div class="project-footer">
+            <a href="https://github.com/IT24100546/pjme-time-series-forecasting" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ───────────────── CERTIFICATIONS ───────────────── -->
+  <section id="certifications" class="section section--certs">
+    <div class="section-header" data-animate>
+      <p class="eyebrow">Certifications</p>
+      <h2 class="section-headline">Learning aligned<br>with my direction.</h2>
+      <p class="body-text">
+        Focused training in SQL, Python, data analysis, and introductory data science
+        supports my academic and project work.
+      </p>
+    </div>
+
+    <div class="certs-grid" data-animate data-delay="100">
+      <div class="cert-row">
+        <div class="cert-item">
+          <p class="cert-org">HackerRank</p>
+          <h3 class="cert-name">SQL Basic Certificate</h3>
+        </div>
+        <div class="cert-item">
+          <p class="cert-org">HackerRank</p>
+          <h3 class="cert-name">SQL Intermediate Certificate</h3>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-item">
+          <p class="cert-org">Cisco Networking Academy</p>
+          <h3 class="cert-name">Introduction to Data Science</h3>
+        </div>
+        <div class="cert-item">
+          <p class="cert-org">Kaggle</p>
+          <h3 class="cert-name">Python &amp; Data Visualisation</h3>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-item">
+          <p class="cert-org">University of Michigan · Coursera</p>
+          <h3 class="cert-name">Python for Beginners</h3>
+        </div>
+        <div class="cert-item">
+          <p class="cert-org">Google Digital Garage</p>
+          <h3 class="cert-name">Fundamentals of Digital Marketing</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── CONTACT ───────────────── -->
+  <section id="contact" class="section section--contact">
+    <div class="contact-grid">
+      <div class="contact-left" data-animate>
+        <p class="eyebrow">Let's Connect</p>
+        <h2 class="section-headline contact-headline">Open to opportunities,<br>collaborations, and<br>meaningful data problems.</h2>
+        <p class="body-text">
+          I'm Tharushi Navodya, a Data Analytics undergraduate at SLIIT and an aspiring
+          Data Analyst. I'm interested in internships, research collaborations, and
+          conversations about analytics, dashboards, and practical data solutions.
+        </p>
+        <p class="contact-location">Based in Sri Lanka · Feel free to reach out — I'd be happy to connect.</p>
+        <p class="contact-email">tnavodya12@gmail.com</p>
+      </div>
+
+      <div class="contact-right" data-animate data-delay="150">
+        <div class="contact-actions">
+          <a href="mailto:tnavodya12@gmail.com" class="contact-action">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="m4 7 8 6 8-6"></path>
+            </svg>
+            <span>
+              <strong>Email</strong>
+              <small>tnavodya12@gmail.com</small>
+            </span>
+          </a>
+          <a href="https://wa.me/94775755145" class="contact-action" target="_blank" rel="noopener">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"></path>
+              <path d="M9 8.8c.2 3 2.4 5.2 5.2 6 .6.2 1.4-.7 1.5-1.2"></path>
+              <path d="M8.7 8.4c.2-.6.7-1.1 1.1-1 .3.1.8 1.3.8 1.6 0 .4-.4.7-.7.9"></path>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a href="cv.pdf" class="contact-action" download>
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v11"></path>
+              <path d="m7 10 5 5 5-5"></path>
+              <path d="M5 20h14"></path>
+            </svg>
+            <span>Download CV</span>
+          </a>
+          <a href="https://github.com/IT24100546" class="contact-action" target="_blank" rel="noopener">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-2c-2.9.6-3.5-1.2-3.5-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.6 9.6 0 0 1 5.2 0c2-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.7 3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7.9.7 1.8v2.9c0 .3.2.6.8.5A10 10 0 0 0 12 2z"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/tharushi-navodya-90ab7b385" class="contact-action" target="_blank" rel="noopener">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 9h3v10H5z"></path>
+              <path d="M5 5.5a1.6 1.6 0 1 0 3.2 0A1.6 1.6 0 0 0 5 5.5z"></path>
+              <path d="M12 9h3v1.4c.5-.8 1.4-1.6 3-1.6 2.2 0 3.5 1.5 3.5 4.3V19h-3v-5.3c0-1.3-.5-2.1-1.6-2.1-1.2 0-1.9.8-1.9 2.1V19h-3z"></path>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="footer">
+    <span>Designed and built by Tharushi Navodya</span>
+    <span>2026</span>
+  </footer>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "None",
+    "ignoreDeprecations": "6.0",
+    "lib": ["ES2017", "DOM", "DOM.Iterable"],
+    "outDir": "./dist",
+    "rootDir": "./ts",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": false,
+    "sourceMap": true
+  },
+  "include": ["ts/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
